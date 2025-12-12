@@ -77,6 +77,9 @@ For this **Workflow Engine Code Review Mini Agent** is used as Workflow.
 **Check workflow state using the run ID**  
 ![GET Graph State - Browser View](pics/get%20-%20graph%20-%20state%20-%20{run%20id}%20(1).png)
 
+**Check workflow using browser**
+![GET Graph State - Another View](pics/get%20-%20graph%20-%20state%20(1).png)
+
 
 ## What the workflow engine supports
 - Node functions (sync/async)
