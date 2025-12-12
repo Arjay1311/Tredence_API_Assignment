@@ -55,10 +55,10 @@ For this **Workflow Engine Code Review Mini Agent** is used as Workflow.
 ### 1. POST /graph/create
 
 **Request (Swagger UI / POST call)**  
-![POST Graph Create - Request](pics/post%20-%20graph%20-%20create%20.png)
+![POST Graph Create - Request](pics/post%20-%20graph%20-%20create.png)
 
 **Server Response**  
-![POST Graph Create - Response](pics/post%20-%20graph%20-%20create%20server_response%20(1).png)
+![POST Graph Create - Response](pics/post%20-%20graph%20-%20create%20-%20server_response%20(1).png)
 
 ---
 
@@ -68,14 +68,14 @@ For this **Workflow Engine Code Review Mini Agent** is used as Workflow.
 ![POST Graph Run - Request](pics/post%20-%20graph%20-%20run%20(1).png)
 
 **Server Response**  
-![POST Graph Run - Response](pics/post%20-%20graph%20-%20run%20server_response%20(1).png)
+![POST Graph Run - Response](pics/post%20-%20graph%20-%20run%20-%20server_response%20(1).png)
 
 ---
 
 ### 3. GET /graph/state/{run_id}
 
 **Check workflow state using the run ID**  
-![GET Graph State - Browser View](pics/get%20-%20graph%20-%20state%20-%20{run_id}%20(1).png)
+![GET Graph State - Browser View](pics/get%20-%20graph%20-%20state%20-%20{run%20id}%20(1).png)
 
 
 ## What the workflow engine supports
