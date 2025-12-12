@@ -68,7 +68,7 @@ For this **Workflow Engine Code Review Mini Agent** is used as Workflow.
 ![POST Graph Run - Request](pics/post%20-%20graph%20-%20run%20(1).png)
 
 **Server Response**  
-![POST Graph Run - Response](pics/post%20-%20graph%20-%20run%20-%20server_response%20(1).png)
+![POST Graph Run - Response](pics/post%20-%20graph%20%20-%20run%20-%20server_response%20(1).png)
 
 ---
 
