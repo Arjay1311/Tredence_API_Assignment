@@ -19,12 +19,29 @@ For this **Workflow Engine Code Review Mini Agent** is used as Workflow.
 - app/schemas.py - Pydantic request/response models
 
 ## How to Run
-1. Install:
-   `pip install fastapi uvicorn pydantic
-2. Start:
-   `uvicorn app.main:app --reload
-3. Try example:
-   POST to `/graph/run` with graph_id `code_review_example` and an initial state containing `code` and `quality_threshold`.
+1. Clone Repo:
+`git clone https://github.com/your-username/workflow-engine.git`
+
+2. Install dependencies:
+   `pip install fastapi uvicorn pydantic`
+   
+3. Start the FastAPI server:
+   `uvicorn app.main:app --reload`
+   
+4. Try example:
+   4.1. Create the workflow graph:
+      Use the `/graph/create` endpoint in Swagger UI or via POST request.
+      Provide a graph ID, nodes (mapping of node names to registered functions), edges (how nodes connect, including conditions for branching), and start node.
+   4.2 Run the workflow
+      Use the `/graph/run` endpoint.
+      Specify the graph ID and an initial state containing:
+         The code to analyze.
+         Any thresholds, e.g., quality_threshold.
+      The server will return a run ID, the final state, and a log of all nodes executed.
+   4.3 Check the workflow state
+      Use the `/graph/state/{run_id}` endpoint.
+      Replace `{run_id}` with the ID returned from the run call.
+      This will show the current state, execution log, status, and the current node being executed.
 
 ## What the workflow engine supports
 - Node functions (sync/async)
