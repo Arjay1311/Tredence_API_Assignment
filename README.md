@@ -49,6 +49,33 @@ For this **Workflow Engine Code Review Mini Agent** is used as Workflow.
    - Replace `{run_id}` with the ID returned from the run call.
    - This will show the **current state**, **execution log**, **status**, and the **current node** being executed.
 
+## Output of an Example run
+
+### 1. POST /graph/create
+
+**Request (Swagger UI / POST call)**  
+![POST Graph Create - Request](pics/post - graph - create.png)
+
+**Server Response**  
+![POST Graph Create - Response](screenshots/post_graph_create_response.png)
+
+---
+
+### 2. POST /graph/run
+
+**Request (Run the workflow with initial state)**  
+![POST Graph Run - Request](screenshots/post_graph_run_request.png)
+
+**Server Response**  
+![POST Graph Run - Response](screenshots/post_graph_run_response.png)
+
+---
+
+### 3. GET /graph/state/{run_id}
+
+**Check workflow state using the run ID**  
+![GET Graph State - Request / Browser View](screenshots/get_graph_state.png)
+
 
 ## What the workflow engine supports
 - Node functions (sync/async)
