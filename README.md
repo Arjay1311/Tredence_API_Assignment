@@ -29,19 +29,25 @@ For this **Workflow Engine Code Review Mini Agent** is used as Workflow.
    `uvicorn app.main:app --reload`
    
 4. Try example:
-   4.1. Create the workflow graph:
-      Use the `/graph/create` endpoint in Swagger UI or via POST request.
-      Provide a graph ID, nodes (mapping of node names to registered functions), edges (how nodes connect, including conditions for branching), and start node.
-   4.2 Run the workflow
-      Use the `/graph/run` endpoint.
-      Specify the graph ID and an initial state containing:
-         The code to analyze.
-         Any thresholds, e.g., quality_threshold.
-      The server will return a run ID, the final state, and a log of all nodes executed.
-   4.3 Check the workflow state
-      Use the `/graph/state/{run_id}` endpoint.
-      Replace `{run_id}` with the ID returned from the run call.
-      This will show the current state, execution log, status, and the current node being executed.
+   4.1 **Create the workflow graph:**
+   
+   - Use the `/graph/create` endpoint in Swagger UI or via POST request.
+   - Provide a **graph ID**, **nodes** (mapping of node names to registered functions), **edges** (how nodes connect, including conditions for branching), and **start node**.
+
+   4.2 **Run the workflow**
+   
+   - Use the `/graph/run` endpoint.
+   - Specify the **graph ID** and an **initial state** containing:
+     - The code to analyze.
+     - Any thresholds, e.g., `quality_threshold`.
+   - The server will return a **run ID**, the **final state**, and a **log of all nodes executed**.
+
+   4.3 **Check the workflow state**
+   
+   - Use the `/graph/state/{run_id}` endpoint.
+   - Replace `{run_id}` with the ID returned from the run call.
+   - This will show the **current state**, **execution log**, **status**, and the **current node** being executed.
+
 
 ## What the workflow engine supports
 - Node functions (sync/async)
